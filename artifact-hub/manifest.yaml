@@ -1,0 +1,29 @@
+name: sovai-airgap-ai-starter
+version: 0.2.0
+description: Open-source laptop MVP for an air-gap-ready Sovereign AI artifact supply chain using local Ollama LLM.
+runtime:
+  container_engine: docker-desktop
+  compose_file: docker-compose.yml
+  offline_mode_required: true
+  local_llm_runtime: ollama
+artifacts:
+  images:
+    - name: sovai-airgap/app
+      tag: "0.2"
+      source: artifact-hub/images/sovai-airgap-app-v0.2.tar
+  package_source:
+    type: local-wheelhouse
+    path: artifact-hub/wheelhouse
+  local_llm:
+    runtime: ollama
+    model: llama3.2:1b
+    host_api: http://host.docker.internal:11434
+    note: Model must be pulled before disconnecting internet using `ollama pull llama3.2:1b`.
+  prompts:
+    - artifact-hub/prompts/rag-system-prompt.yaml
+  approved_tools:
+    - artifact-hub/tools/approved-tools.yaml
+governance:
+  audit_log: data/audit/audit-log.jsonl
+  internet_policy: laptop-disconnected-during-runtime-test
+  artifact_policy: approved-local-artifacts-plus-local-ollama-model-only
