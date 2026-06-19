@@ -262,9 +262,9 @@ networks:
 
 Avoid `internal: true` in the first working demo because the app needs to reach host Ollama.
 
-### Problem: Internet check fails because internet is still available
+### Problem: Internet check fails because the internet is still available
 
-The offline bootstrap intentionally checks that internet is disconnected.
+The offline bootstrap intentionally checks that the internet is disconnected.
 
 Disconnect Wi-Fi, unplug Ethernet, or disable VPN, then rerun:
 
