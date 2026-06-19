@@ -30,6 +30,7 @@ cd sovai-airgap-ai-starter-v0.2-ollama
 
 ## Prerequisites
 
+- Download and Install OLLAMA using https://ollama.com/download/[windows/mac/linux]
 - Docker Desktop (or any Container)
 - Ollama installed
 - `llama3.2:1b` pulled before going offline
