@@ -1,4 +1,5 @@
 # SovAI Air-Gap AI Starter v0.2
+SovAIHub ([SovAIHub.com](https://SovAIHub.com))
 
 Open-source laptop MVP for demonstrating an air-gap-ready Sovereign AI pattern using Docker Desktop and local Ollama.
 
@@ -279,3 +280,8 @@ This phase is a working local LLM RAG reference implementation. It is not a full
 - Approved tools.
 - Audit logging.
 - No external LLM API.
+
+
+## Contributor
+
+- Rana Kumar - [LinkedIn](https://www.linkedin.com/in/rana-kumar-333b56127/) - SovAIHub ([SovAIHub.com](https://SovAIHub.com))
