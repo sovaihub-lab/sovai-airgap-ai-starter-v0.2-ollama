@@ -30,7 +30,7 @@ cd sovai-airgap-ai-starter-v0.2-ollama
 
 ## Prerequisites
 
-- Docker Desktop
+- Docker Desktop (or any Container)
 - Ollama installed
 - `llama3.2:1b` pulled before going offline
 
